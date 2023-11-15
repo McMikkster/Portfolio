@@ -13,20 +13,8 @@ a:hover { color: #c72828 !important; }
 .nav-item { font-size: large !important; }
 .imageAboutPage{width: 100%;}
 
-/* about section */
-#about{
-    background-color: #808080 !important;
-}
-.aboutMeText{
-    padding-bottom: 50px;
-}
-
-.row-aboutme{
-    padding: 20px 0px;
-    margin: 10px;
-    background-color:white;
-}
-
+#about { background-color: #828282;}
+#about h1 { color: #c9baba; }
 /* experiences section css */
 .experiencesText.card {
     height: 280px;
@@ -41,7 +29,7 @@ a:hover { color: #c72828 !important; }
     text-align: center;
 }
 .card:hover .experiencesIcon {
-    color:#c72828;
+    color: #008000;
 }
 .experiencesText:hover {
     border: 1px solid #008000;
@@ -67,13 +55,17 @@ a:hover { color: #c72828 !important; }
 }
 
 #experiences, #projects, #contact {
-    margin-top: 2rem;
-    padding-top: 2rem;
+    margin-top: 4rem;
+    padding-top: 4rem;
 }
 #about{
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
 }
 #contact {
     padding-bottom: 4rem;
+}
+
+.row-aboutme{
+    padding-top: 2rem;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Portfolio Website-Ahmed</title>
+  <title>Ahmed Mikky</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- linking css file -->
@@ -17,7 +17,7 @@
     <!-- load javascript after loading all html content -->
     <script src="script/script.js"></script>
     
-<nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-light">
+<nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Ahmed</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,11 +46,10 @@
  <!-- main banner -->
     <section class="bgimage" id="home">
         <div class="container-fluid"></div>
-        </div>
     </section>
 
 <!-- about section-->
-    <section id="about" class="container-fluid section-space">
+    <section id="about" class="container-fluid">
         <div class="container mt-4 pt-4 row-about-me">
             
             <div class="aboutMeText text-center">
@@ -109,82 +108,49 @@
     </section>
 
 <!-- experiences section -->
-<section id="experiences" class="container-fluid section-space">
-    <div class="experiencesTitle text-center">
+<section id="experiences" class="container-fluid">
+      <div class="experiencesTitle text-center">
         <h1>Experiences</h1>
     </div>
-    <div class="experiencesSection">
-        <div class="row">
-            <div class="col-md-3">
-                
+      <div class="timeline container">
+        <div class="timeline-container right-container">
+            <img src="icons/bloomfield.png">
+            <div class="timeline-textbox">
+                <h2>Bloomfield College</h2>
+                <medium>September 2020 - December 2023</medium>
+                <p></p>Bachelors: Computer Science</p>
+                <p>Bachelors: Mathematics</p>
+                <p>GPA: 3.9/4.0</p>
+                <p>Awards: Deans Honors List</p>
+                <span class="right-container-arrow"></span>
             </div>
+        </div>
+
+
+        <div class="timeline-container left-container">
+            <img src="icons/newjerseycourts.jpg">
+            <div class="timeline-textbox">
+                <h2>New Jersey Courts</h2>
+                <medium>October 2022 - Present</medium>
+                <ul>
+                    <li>Completed an average of 100 Salesforce tickets per week, demonstrating exceptional efficiency and
+                        problem-solving skills in resolving customer issues and ensuring high levels of customer satisfaction
+                    </li><br>
+                    <li>
+                        Analyzed incidents reported on IBM Security QRadar and inspected them with security tools such as VirusTotal
+                        and Forescout to determine any malicious activity
+                    </li>
+                </ul>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row" data-wow-delay="1s">
+        <div class="col-12 resume d-flex justify-content-center align-items-center">
+            <a class="btn btn-lg btn-success" target="_blank" href="files/AhmedMikky-Resume.pdf">Want to see my resume?</a>
         </div>
     </div>
 </section>
-
-<!-- <section id="Experience" class="container-fluid section-space">
-        <div class="row experience">
-            <div class="col-lg-11 col-12">
-                <div class="col-12 text-center">
-                    <h1>Experience</h1>
-                </div>
-                <div class="row wow animate__fadeInRight" data-wow-delay="1s">
-                    <div class="col-lg-5 col-12 timeline-box timeline-odd">
-                        <h2>Bloomfield College</h2>
-                        <p>Bachelors: Computer Science</p>
-                        <p>Bachelors: Applied Mathematics</p>
-                        <p>GPA: 3.9/4.0</p>
-                        <br>
-                        <p><u>Awards:</u></p>
-                        <ul>
-                            <li>
-                                Deans Honors List
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-2 line center-flex d-none d-lg-flex" style="margin-left: -1vw;">
-                        <div class=""></div>
-                        <span></span>
-                        <img src="icons/graduation.png" alt="graduation hat icon" height="60%" width="60%"/>
-                    </div>
-                    <div class="col-5 date d-none d-lg-flex">
-                        September 2020 - Dec 2023
-                    </div>
-                </div>
-                <div class="row wow animate__fadeInLeft" data-wow-delay="1s">
-                    <div class="col date date-inverted d-none d-lg-flex">
-                        June 2017 - June 2019
-                    </div>
-                    <div class="col-2 line center-flex d-none d-lg-flex" style="margin-right: 1vw;">
-                        <div class=""></div>
-                        <span></span>
-                        <img src="icons/newjerseycourts.png" alt="box icon" height="40%" width="50%"/>
-                    </div>
-                    <div class="col-lg-5 col-12 timeline-box timeline-inverted">
-                        <h2>New Jersey Courts</h2>
-                        <p>Position: Information Security Intern</p>
-                        <br>
-                        <ul>
-                            <li>
-                                Completed an average of 100 Salesforce tickets per week, demonstrating exceptional efficiency and
-                                problem-solving skills in resolving customer issues and ensuring high levels of customer satisfaction
-                            </li>
-                            <li>
-                                Analyzed incidents reported on IBM Security QRadar and inspected them with security tools such as VirusTotal
-                                and Forescout to determine any malicious activity
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row resume wow animate__fadeInUp" data-wow-delay="1s">
-                    <div class="col-12 center-flex">
-                        <a class="btn btn-lg btn-success" target="_blank" href="files/AhmedMikky-Resume.pdf"> See Full Resume</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </section> -->
 
 <!-- projects -->
  <section id="projects">
@@ -195,10 +161,10 @@
                     <div class="card">
                         <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
                         <div class="card-body">
-                            <h4 class="card-title">YouTube Clone</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <h4 class="card-title">ReserVar</h4>
+                            <p class="card-text">Parking Information System that helps the Students of Bloomfield College find available parking spots on campus.</p>
                             <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
+                                <a href="https://github.com/Bloomfield-College-2023-Class/Capstone-Main" target="_blank" class="btn btn-success">Link</a>
                             </div>
                         </div>
                     </div>
@@ -208,69 +174,20 @@
                     <div class="card projectsContent">
                         <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
                         <div class="card-body">
-                            <h4 class="card-title">Quiz App</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <h4 class="card-title">MassSportsNews</h4>
+                            <p class="card-text">Android app that shows a live score of sports and news highlights from all sports.</p><br>
                             <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
+                                <a href="https://github.com/McMikkster/MassSportsNews" target="_blank" class="btn btn-success">Link</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card projectsContent">
-                        <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Product Landing Page</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
             <br>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card projectsContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Messaging Service</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <!-- <div class="row">
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card projectsContent">
-                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Twitter Clone</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card projectsContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Blog App</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div> -->
     </section>
 
 <!-- contact section-->

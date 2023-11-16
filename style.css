@@ -1,4 +1,10 @@
 /* add hero background */
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #2e364a !important;
+}
 
 .bgimage{
     height: 100vh;
@@ -8,14 +14,14 @@
 }
 
 /* navbar */
-.navbar{background-color: #808080;}
+.navbar{background-color: #2e364a;}
 a:hover { color: #c72828 !important; }
 .nav-item { font-size: large !important; }
 .imageAboutPage{width: 100%;}
 
 /* about section */
 #about{
-    background-color: #808080 !important;
+    background-color:#fff;
 }
 .aboutMeText{
     padding-bottom: 50px;
@@ -24,28 +30,159 @@ a:hover { color: #c72828 !important; }
 .row-aboutme{
     padding: 20px 0px;
     margin: 10px;
-    background-color:white;
 }
 
+
 /* experiences section css */
-.experiencesText.card {
-    height: 280px;
-    cursor: pointer;
-  }
-.experiencesIcon {
-    font-size: 36px;
-    text-align: center;
-    width: 100%;
+#experiences h1{color: #fff;}
+
+.timeline{
+    position : relative;
+    max-width: 1200px;
+    margin: 100px auto;
 }
-.card-title {
-    text-align: center;
+
+.timeline-container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation : movedown 1s linear forwards;
+    opacity: 0;
 }
-.card:hover .experiencesIcon {
-    color:#c72828;
+@keyframes movedown{
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
-.experiencesText:hover {
-    border: 1px solid #008000;
+.container:nth-child(1){
+    animation-delay: 0s;
 }
+.container:nth-child(2){
+    animation-delay: 1s;
+}
+.container:nth-child(3){
+    animation-delay: 2s;
+}
+
+.timeline-container img{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline{
+    0% {height : 0}
+    100% {height : 100%;}
+}
+.right-container img{
+    left: -20px;
+}
+
+.left-container{
+    left:0;
+}
+.right-container{
+    left:50%
+}
+
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #fff;
+    right : -15px;
+}
+
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #fff;
+    left : -15px;
+}
+.timeline-textbox{
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.timeline-textbox h2{font-weight: 600;}
+.timeline-textbox medium{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width:600px)
+{
+    .timeline{
+        margin: 50px auto;
+    }
+    .timeline::after{
+        left: 31px;
+    }
+    .timeline-container{
+        width : 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .timeline-textbox{
+        font-size : 13px
+    }
+    .timeline-textbox medium{
+        margin-bottom: 10px;
+    }
+    .right-container{
+        left:0;
+    }
+
+    .left-container img, .right-container img {
+        left : 10px;
+    }
+    .left-container-arrow, .right-container-arrow{
+        border-right: 15px solid #fff;
+        border-left : 0;
+        left : -15px;
+    }
+
+}
+
+
+/* projects section */
+#projects{background: #fff;}
+
+
+/* contact me */
+#contact h1 {color: #fff;}
 
 /* social media icons styling */
 .social-icons{
@@ -62,7 +199,8 @@ a:hover { color: #c72828 !important; }
 
 /* footer styling */
 #footer{
-    background-color: #808080;
+    /* background-color: #808080; */
+    background-color: #2e364a;
     text-align: center;
 }
 
@@ -77,3 +215,4 @@ a:hover { color: #c72828 !important; }
 #contact {
     padding-bottom: 4rem;
 }
+

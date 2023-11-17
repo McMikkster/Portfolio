@@ -5,10 +5,14 @@
 body{
     background: #2e364a !important;
 }
-
+.hero-section{
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
 .bgimage{
     height: 100vh;
-    background: url('images/aboutMeImage.JPG');
+    background: url('images/hero-image.webp');
     background-size: cover;
     position: relative;
 }
@@ -199,8 +203,8 @@ a:hover { color: #c72828 !important; }
 
 /* footer styling */
 #footer{
-    /* background-color: #808080; */
-    background-color: #2e364a;
+    background-color: #808080;
+    /* background-color: #2e364a; */
     text-align: center;
 }
 

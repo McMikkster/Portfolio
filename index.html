@@ -45,7 +45,8 @@
 
  <!-- main banner -->
     <section class="bgimage" id="home">
-        <div class="container-fluid"></div>
+        <div class="container-fluid">
+        </div>
     </section>
 
 <!-- about section-->
@@ -57,8 +58,8 @@
             </div>
             
             <div class="row aboutMeInfo">
-                <div class="col-md-4">
-                    <img src="images/about.jpeg" height="100%" width="100%" alt="professional headshot">
+                <div class="col-md-4 d-flex  align-items-center">
+                    <img src="images/about.jpeg" height="80%" width="100%" alt="professional headshot">
                 </div>
 
                 
@@ -194,20 +195,22 @@
     <section id="contact">
         <div class="container mt-3 contactContent">
             <h1 class="text-center">Contact Me</h1>
-
+            <form>
             <div class="row mt-4">
                 <div class="col-lg-6">
                     <!-- form fields -->
-                    <form>
-                        <input type="text" class="form-control form-control-lg" placeholder="Name">
-                        <input type="email" class="form-control mt-3" placeholder="Email">
-                        <div class="mb-3 mt-3">
-                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Email content"></textarea>
-                        </div>
-                    </form>
-                    <button type="button" class="btn btn-success mt-3">Contact Me</button>
-                    
+                    <input type="text" class="form-control form-control-lg" placeholder="Name">
                 </div>
+                <div class="col-lg-6">
+                  <input type="email" class="form-control form-control-lg" placeholder="Email">
+                </div>
+            </div>
+            <div class="mb-3 mt-3">
+                <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Email content"></textarea>
+            </div>
+            </form>
+            <div class="mb-3 mt-3 text-center">
+              <button type="button" class="btn btn-success mt-3">Contact Me</button>
             </div>
         </div>
     </section>

@@ -4,10 +4,15 @@ function sendMail() {
       email: document.getElementById("email").value,
       message: document.getElementById("message").value,
     };
-  
-    const serviceID = "service_yma8m5h";
+    
+    if(!name | !email | !message)
+    {
+      alert("Please complete the entire form.")
+    }
+    else{
+     const serviceID = "service_yma8m5h";
     const templateID = "contact_form";
-  
+    
       emailjs.send(serviceID, templateID, params)
       .then(res=>{
           document.getElementById("name").value = "";
@@ -17,7 +22,10 @@ function sendMail() {
           alert("Your message sent successfully!!")
   
       })
-      .catch(err=>console.log(err));
+      .catch(err=>console.log(err));     
+    }
+
+
   
   }
   

@@ -22,7 +22,7 @@ a:hover { color: #c72828 !important; }
 
 /* hero section */
 .hero{
-    margin : -100px 0;
+    margin-bottom : -100px;
 }
 
 .hero-body {
@@ -36,13 +36,13 @@ a:hover { color: #c72828 !important; }
   .terminal-container {
     display: flex;
     justify-content: center;
-    width: 1000px;
+    width: 60%;
     background: black;
   }
   .terminal {
     position: relative;
-    width: 1000px;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 100%;
     border-radius: 6px;
     padding-top: 45px;
     overflow: hidden;
@@ -69,9 +69,10 @@ a:hover { color: #c72828 !important; }
     display: flex;
     flex-direction: row;
     font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+    font-size: large;
     color: lime;
     padding: 0 1rem 1rem;
-    margin: 0;
+    margin-bottom: -5px;
   }
   .terminal pre p {
     white-space: nowrap;
@@ -110,7 +111,7 @@ a:hover { color: #c72828 !important; }
       width: 0;
     }
     100% {
-      width: 1200px;
+      width: 100%;
     }
   }
   @keyframes blink {

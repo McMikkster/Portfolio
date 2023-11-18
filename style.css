@@ -45,12 +45,11 @@ a:hover { color: #c72828 !important; }
     max-width: 1200px;
     border-radius: 6px;
     padding-top: 45px;
-    margin-top: px;
     overflow: hidden;
     background-color: rgb(15, 15, 16);
     transform: translateY(-3px);
+    padding-bottom: 50px;
     box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-    margin-bottom:50px;
   }
   .terminal::before {
     content: "\2022 \2022 \2022";

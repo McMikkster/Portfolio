@@ -123,7 +123,7 @@ a:hover { color: #c72828 !important; }
 
 /* about section */
 #about{
-    background-color:#fff;
+    background-color:#f7f7f7;
 }
 .aboutMeText{
     padding-bottom: 50px;
@@ -280,7 +280,7 @@ a:hover { color: #c72828 !important; }
 
 
 /* projects section */
-#projects{background: #fff;}
+#projects{background: #f7f7f7;}
 
 
 /* contact me */

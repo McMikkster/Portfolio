@@ -1,0 +1,18 @@
+body {
+  background: rgba(0,0,0,0.8);
+  margin-top: 5%;
+}
+.bin {
+  font-size:1.25em;
+  width: 800px;
+	height: 500px;
+	border-radius: 10px;
+	background: rgb(74,106,138);
+	color: rgba(255,255,255,0.2);
+	margin: 0 auto;
+	font-family: monospace;
+	word-wrap: break-word;
+ 	line-height: 0.8em;
+    letter-spacing: 1px;
+	overflow: hidden;
+}

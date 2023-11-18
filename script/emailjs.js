@@ -5,11 +5,11 @@ function sendMail() {
       message: document.getElementById("message").value,
     };
     
-    if(!name | !email | !message)
-    {
-      alert("Please complete the entire form.")
-    }
-    else{
+    // if(!name | !email | !message)
+    // {
+    //   alert("Please complete the entire form.")
+    // }
+    // else{
      const serviceID = "service_yma8m5h";
     const templateID = "contact_form";
     
@@ -23,7 +23,7 @@ function sendMail() {
   
       })
       .catch(err=>console.log(err));     
-    }
+    // }
 
 
   

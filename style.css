@@ -50,6 +50,7 @@ a:hover { color: #c72828 !important; }
     background-color: rgb(15, 15, 16);
     transform: translateY(-3px);
     box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+    margin-bottom:50px;
   }
   .terminal::before {
     content: "\2022 \2022 \2022";
@@ -78,7 +79,7 @@ a:hover { color: #c72828 !important; }
     overflow: hidden;
   }
   .terminal pre:nth-child(1) p {
-    width: 30.5em;
+    width: 33.5em;
     animation: typing  0.5s steps(30, end);
   }
   .terminal pre:nth-child(2) {
@@ -300,7 +301,7 @@ a:hover { color: #c72828 !important; }
 
 /* footer styling */
 #footer{
-    background-color: #808080;
+    background-color: rgb(58, 58, 58);;
     /* background-color: #2e364a; */
     text-align: center;
 }

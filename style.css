@@ -12,6 +12,7 @@
 body{
     background: #2e364a !important;
 }
+html, body{ overflow-x: hidden; max-width: 100%}
 
 /* navbar */
 .navbar{background-color: rgb(58, 58, 58);}
@@ -22,11 +23,12 @@ a:hover { color: #c72828 !important; }
 
 /* hero section */
 .hero{
-    margin-bottom : -100px;
+    /* margin-bottom : -100px; */
 }
 
 .hero-body {
     height: 100vh;
+    margin-bottom: -100px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -36,7 +38,7 @@ a:hover { color: #c72828 !important; }
   .terminal-container {
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 1000px;
     background: black;
   }
   .terminal {
@@ -190,7 +192,7 @@ a:hover { color: #c72828 !important; }
     left: 50%;
     margin-left: -3px;
     z-index: -1;
-    animation: moveline 6s linear forwards;
+    /* animation: moveline 6s linear forwards; */
 }
 
 @keyframes moveline{
@@ -275,7 +277,6 @@ a:hover { color: #c72828 !important; }
         border-left : 0;
         left : -15px;
     }
-
 }
 
 

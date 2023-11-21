@@ -282,6 +282,7 @@ a:hover { color: #c72828 !important; }
 
 /* projects section */
 #projects{background: #f7f7f7;}
+.projects-row{padding-top: 50px;}
 
 
 /* contact me */
@@ -310,6 +311,7 @@ a:hover { color: #c72828 !important; }
 #experiences, #projects, #contact {
     margin-top: 2rem;
     padding-top: 2rem;
+    padding-bottom: 5rem;
 }
 #about{
     padding-top: 1rem;

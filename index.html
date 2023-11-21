@@ -58,7 +58,7 @@
  <!-- main banner -->
  <section class="hero">
     <div class="hero-body">
-        <div class="terminal-container animate__animated animate__fadeIn">
+        <div class="terminal-container scrollspy" data-animation="fadeIn">
 
             <div class="terminal">
               <pre><p>ahmed@ahmedmikky-Inspiron-15-3567:~$ echo greetings.txt</p><span class="terminal-span">&nbsp;</span></pre>
@@ -76,17 +76,17 @@
         <div class="container mt-4 pt-4 row-about-me">
             
             <div class="aboutMeText text-center">
-                <h1 class="animate__animated animate__fadeInDown">About Me</h1>
+                <h1 class="scrollspy" data-animation="fadeInDown">About Me</h1>
             </div>
             
             <div class="row aboutMeInfo">
-                <div class="col-md-4 d-flex align-items-center animate__animated animate__fadeInLeft">
+                <div class="portrait col-md-4 d-flex align-items-center scrollspy" data-animation="fadeInLeft">
                     <img src="images/about.jpeg" height="70%" width="100%" alt="professional headshot">
                 </div>
 
                 
                 <div class="col-sm-8 center-flex">
-                    <div class="row row-aboutme animate__animated animate__fadeInRight">
+                    <div class="row row-aboutme scrollspy" data-animation="fadeInRight">
                         <div class="col-lg-2 col-3 center-flex">
                             <img src="icons/student.png" height="100%" width="100%">
                         </div>
@@ -99,7 +99,7 @@
                         </div>
                     </div>
 
-                    <div class="row row-aboutme animate__animated animate__fadeInRight">
+                    <div class="row row-aboutme scrollspy" data-animation="fadeInRight">
                         <div class="col-lg-2 col-3 center-flex">
                             <img src="icons/tutoring.svg" height="100%" width="100%">
                         </div>
@@ -112,7 +112,7 @@
                         </div>
                     </div>
 
-                    <div class="row row-aboutme animate__animated animate__fadeInRight">
+                    <div class="row row-aboutme scrollspy" data-animation="fadeInRight">
                         <div class="col-lg-2 col-3 center-flex">
                             <img src="icons/cooking.svg" height="100%" width="100%">
                         </div>
@@ -133,12 +133,12 @@
 <!-- experiences section -->
 <section id="experiences" class="container-fluid">
       <div class="experiencesTitle text-center">
-        <h1 class="animate__animated animate__fadeInDown">Experiences</h1>
+        <h1 class="scrollspy" data-animation="fadeIn">Experiences</h1>
     </div>
       <div class="timeline container">
         <div class="timeline-container right-container">
             <img src="icons/bloomfield.png">
-            <div class="timeline-textbox animate__animated animate__bounceInRight">
+            <div class="timeline-textbox scrollspy" data-animation="bounceInRight">
                 <h2>Bloomfield College</h2>
                 <medium>September 2020 - December 2023</medium>
                 <ul>
@@ -153,7 +153,7 @@
 
         <div class="timeline-container left-container">
             <img src="icons/newjerseycourts.jpg">
-            <div class="timeline-textbox animate__animated animate__bounceInLeft anim">
+            <div class="timeline-textbox scrollspy" data-animation="bounceInLeft">
                 <h2>New Jersey Courts</h2>
                 <medium>October 2022 - Present</medium>
                 <ul>
@@ -170,7 +170,7 @@
         </div>
     </div>
     <div class="row" data-wow-delay="1s">
-        <div class="col-12 resume d-flex justify-content-center align-items-center animate__animated animate__fadeInUp">
+        <div class="col-12 resume d-flex justify-content-center align-items-center scrollspy" data-animation="fadeInUp">
             <a class="btn btn-lg btn-success" target="_blank" href="files/AhmedMikky-Resume.pdf">Want to see my resume?</a>
         </div>
     </div>
@@ -178,11 +178,11 @@
 
 <!-- projects -->
  <section id="projects">
-        <div class="container mt-3">
-            <h1 class="text-center animate__animated animate__fadeInDown">Projects</h1>
-            <div class="row">
+        <div class="container mt-3 project-container">
+            <h1 class="text-center scrollspy" data-animation="fadeInDown">Projects</h1>
+            <div class="row projects-row">
                 <div class="col-lg-4 mt-4">
-                    <div class="card animate__animated animate__fadeInUp">
+                    <div class="card scrollspy" data-animation="fadeInUp">
                         <img class="card-img-top" src="images/reservar.jpg" alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">ReserVar</h4>
@@ -194,7 +194,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 mt-4 animate__animated animate__fadeInUp">
+                <div class="col-lg-4 mt-4 scrollspy" data-animation="fadeInUp">
                     <div class="card projectsContent">
                         <img class="card-img-top" src="images/sportsnews.jpg" alt="Card image" style="width:100%">
                         <div class="card-body">
@@ -212,27 +212,28 @@
             <!-- <div class="row">
 
             </div> -->
+            </div>
     </section>
 
 <!-- contact section-->
     <section id="contact">
         <div class="container mt-3 contactContent">
-            <h1 class="text-center animate__animated animate__fadeInDown">Contact Me</h1>
+            <h1 class="text-center scrollspy" data-animation="fadeInDown">Contact Me</h1>
             <form id="contact-form">
             <div class="row mt-4">
-                <div class="col-lg-6 animate__animated animate__fadeInLeft">
+                <div class="col-lg-6 scrollspy" data-animation="fadeInLeft">
                     <!-- form fields -->
                     <input type="text" class="form-control form-control-lg" placeholder="Name" id="name">
                 </div>
-                <div class="col-lg-6 animate__animated animate__fadeInRight">
+                <div class="col-lg-6 scrollspy" data-animation="fadeInRight">
                   <input type="email" class="form-control form-control-lg" placeholder="Email" id="email">
                 </div>
             </div>
-            <div class="mb-3 mt-3 animate__animated animate__fadeInUp">
+            <div class="mb-3 mt-3 scrollspy" data-animation="fadeInUp">
                 <textarea class="form-control" rows="5" id="message" placeholder="Email content"></textarea>
             </div>
             </form>
-            <div class="mb-3 mt-3 text-center animate__animated animate__fadeInUp">
+            <div class="mb-3 mt-3 text-center scrollspy" data-animation="fadeInUp">
               <button type="button" class="btn btn-success mt-3" onclick="sendMail()">Contact Me</button>
             </div>
         </div>

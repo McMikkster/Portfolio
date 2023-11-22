@@ -22,9 +22,9 @@ a:hover { color: #c72828 !important; }
 
 
 /* hero section */
-.hero{
-    /* margin-bottom : -100px; */
-}
+/* .hero{
+    margin-bottom : -100px;
+} */
 
 .hero-body {
     height: 100vh;
@@ -127,9 +127,12 @@ a:hover { color: #c72828 !important; }
 #about{
     background-color:#f7f7f7;
 }
-.aboutMeText{
+.aboutMeTitle{
     padding-bottom: 50px;
 }
+/* .aboutMeTitle{ 
+  transform: rotate(-90deg);
+} */
 
 .row-aboutme{
     padding: 20px 0px;
@@ -138,7 +141,9 @@ a:hover { color: #c72828 !important; }
 
 
 /* experiences section css */
-#experiences h1{color: #fff;}
+.experiencesTitle{
+  color: #fff;
+}
 
 .timeline{
     position : relative;
@@ -310,8 +315,8 @@ a:hover { color: #c72828 !important; }
 
 #experiences, #projects, #contact {
     margin-top: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 #about{
     padding-top: 1rem;

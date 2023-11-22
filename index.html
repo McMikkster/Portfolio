@@ -27,6 +27,7 @@
 
 <body>
     <!-- load javascript after loading all html content -->
+    <!-- uncomment to enable animations -->
     <script src="script/script.js"></script>
     
 <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-dark">
@@ -74,18 +75,18 @@
 <!-- about section-->
     <section id="about" class="container-fluid">
         <div class="container mt-4 pt-4 row-about-me">
-            
-            <div class="aboutMeText text-center">
-                <h1 class="scrollspy" data-animation="fadeInDown">About Me</h1>
+            <div class="row">
+                <div class="center-flex aboutMeTitle scrollspy text-center" data-animation="fadeIn">
+                    <h1>About Me</h1>
+                </div>
             </div>
-            
-            <div class="row aboutMeInfo">
+            <div class="row aboutMe">
                 <div class="portrait col-md-4 d-flex align-items-center scrollspy" data-animation="fadeInLeft">
                     <img src="images/about.jpeg" height="70%" width="100%" alt="professional headshot">
                 </div>
 
                 
-                <div class="col-sm-8 center-flex">
+                <div class="col-lg-7 col-12 center-flex">
                     <div class="row row-aboutme scrollspy" data-animation="fadeInRight">
                         <div class="col-lg-2 col-3 center-flex">
                             <img src="icons/student.png" height="100%" width="100%">
@@ -132,9 +133,9 @@
 
 <!-- experiences section -->
 <section id="experiences" class="container-fluid">
-      <div class="experiencesTitle text-center">
-        <h1 class="scrollspy" data-animation="fadeIn">Experiences</h1>
-    </div>
+        <div class="experiencesTitle text-center">
+            <h1 class="scrollspy" data-animation="fadeIn">Experiences</h1>
+        </div>
       <div class="timeline container">
         <div class="timeline-container right-container">
             <img src="icons/bloomfield.png">
@@ -177,43 +178,43 @@
 </section>
 
 <!-- projects -->
- <section id="projects">
-        <div class="container mt-3 project-container">
-            <h1 class="text-center scrollspy" data-animation="fadeInDown">Projects</h1>
-            <div class="row projects-row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card scrollspy" data-animation="fadeInUp">
-                        <img class="card-img-top" src="images/reservar.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">ReserVar</h4>
-                            <p class="card-text">Parking Information System that helps the Students of Bloomfield College find available parking spots on campus.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/Bloomfield-College-2023-Class/Capstone-Main" target="_blank" class="btn btn-success">Link</a>
-                            </div>
+<section id="projects">
+    <div class="container mt-3 project-container">
+        <h1 class="text-center scrollspy" data-animation="fadeInDown">Projects</h1>
+        <div class="row projects-row">
+            <div class="col-lg-4 mt-4">
+                <div class="card scrollspy" data-animation="fadeInUp">
+                    <img class="card-img-top" src="images/reservar.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">ReserVar</h4>
+                        <p class="card-text">Parking Information System that helps the Students of Bloomfield College find available parking spots on campus.</p>
+                        <div class="text-center">
+                            <a href="https://github.com/Bloomfield-College-2023-Class/Capstone-Main" target="_blank" class="btn btn-success">Link</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-lg-4 mt-4 scrollspy" data-animation="fadeInUp">
-                    <div class="card projectsContent">
-                        <img class="card-img-top" src="images/sportsnews.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">MassSportsNews</h4>
-                            <p class="card-text">Android app that shows a live score of sports and news highlights from all sports.</p><br>
-                            <div class="text-center">
-                                <a href="https://github.com/McMikkster/MassSportsNews" target="_blank" class="btn btn-success">Link</a>
-                            </div>
+            <div class="col-lg-4 mt-4 scrollspy" data-animation="fadeInUp">
+                <div class="card projectsContent">
+                    <img class="card-img-top" src="images/sportsnews.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">MassSportsNews</h4>
+                        <p class="card-text">Android app that shows a live score of sports and news highlights from all sports.</p><br>
+                        <div class="text-center">
+                            <a href="https://github.com/McMikkster/MassSportsNews" target="_blank" class="btn btn-success">Link</a>
                         </div>
                     </div>
                 </div>
-                
             </div>
-            <br>
-            <!-- <div class="row">
+           
+        </div>
+        <br>
+        <!-- <div class="row">
 
-            </div> -->
-            </div>
-    </section>
+        </div> -->
+        </div>
+</section>
 
 <!-- contact section-->
     <section id="contact">

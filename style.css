@@ -9,10 +9,22 @@
   text-decoration: none;
   box-sizing: border-box;
 }
-body{
-    background: #2e364a !important;
+html, body{ 
+  overflow-x: hidden;
+  width: 100%;
+  margin : 0;
+  padding: 0;
 }
-html, body{ overflow-x: hidden; max-width: 100%}
+body{
+    background-color: #2e364a !important;
+}
+@media (max-width: 767px) {
+  .navbar {
+      background-color: rgb(58, 58, 58) !important;
+  }
+}
+
+
 
 /* navbar */
 .navbar{background-color: rgb(58, 58, 58);}
@@ -27,7 +39,6 @@ a:hover { color: #c72828 !important; }
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   letter-spacing: .1rem;
 }
-/* font-family: 'Courier New', Courier, monospace */
 h1, h2{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;}
 h5 {font-family: 'Courier New', Courier, monospace !important}
 
@@ -153,7 +164,7 @@ h5 {font-family: 'Courier New', Courier, monospace !important}
 
 /* experiences section css */
 .experiencesTitle{
-  color: #fff;
+  color: #f7f7f7;
 }
 
 .timeline{
@@ -203,7 +214,7 @@ h5 {font-family: 'Courier New', Courier, monospace !important}
     position: absolute;
     width: 6px;
     height: 100%;
-    background: #fff;
+    background: #f7f7f7;
     top: 0;
     left: 50%;
     margin-left: -3px;
@@ -234,7 +245,7 @@ h5 {font-family: 'Courier New', Courier, monospace !important}
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-left: 15px solid #fff;
+    border-left: 15px solid #f7f7f7;
     right : -15px;
 }
 
@@ -246,12 +257,12 @@ h5 {font-family: 'Courier New', Courier, monospace !important}
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-right: 15px solid #fff;
+    border-right: 15px solid #f7f7f7;
     left : -15px;
 }
 .timeline-textbox{
     padding: 20px 30px;
-    background: #fff;
+    background: #f7f7f7;
     position: relative;
     border-radius: 6px;
     font-size: 15px;
@@ -264,17 +275,13 @@ h5 {font-family: 'Courier New', Courier, monospace !important}
 
 @media screen and (max-width:1000px)
 {
-    .timeline{
-        margin: 50px auto;
-    }
-    .timeline::after{
-        left: 31px;
-    }
-    .timeline-container{
-        width : 100%;
-        padding-left: 80px;
-        padding-right: 25px;
-    }
+  .timeline::after{display: none;}
+
+  .timeline-container {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
     .timeline-textbox{
         font-size : 13px;
     }
@@ -286,12 +293,10 @@ h5 {font-family: 'Courier New', Courier, monospace !important}
     }
 
     .left-container img, .right-container img {
-        left : -5px;
+        display: none;
     }
     .left-container-arrow, .right-container-arrow{
-        border-right: 15px solid #fff;
-        border-left : 0;
-        left : -15px;
+        display: none;
     }
 
     .email{
@@ -301,17 +306,17 @@ h5 {font-family: 'Courier New', Courier, monospace !important}
       display : none;
     }
     .hero {
-      background-image: url('images/hero.jpg'); /* Replace 'new-image.jpg' with the path to your new image */
-      background-size: cover; /* Adjust the background size as needed */
-      background-position: center; /* Center the background image */
-      background-color: transparent; /* Remove background color */
-      display: block; /* Show the .hero section */
-      height: 100%; /* Set a height for the container */
-      width: 100%; /* Set the width to 100% of the viewport */
+      background-image: url('images/hero.jpg'); 
+      background-size: cover; 
+      background-position: center;
+      background-color: transparent;
+      display: block;
+      height: 100%; 
+      width: 100%; 
   }
 
   .terminal-container {
-      display: none; /* Hide the terminal content within the hero section */
+      display: none; 
   }
 
 }
@@ -322,7 +327,7 @@ h5 {font-family: 'Courier New', Courier, monospace !important}
 
 
 /* contact me */
-#contact h1 {color: #fff;}
+#contact h1 {color: #f7f7f7;}
 
 /* social media icons styling */
 .social-icons{

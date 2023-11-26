@@ -16,7 +16,3 @@ document.addEventListener('DOMContentLoaded', function () {
     observer.observe(element);
   });
 });
-
-date =  new Date();
-year = date.getFullYear()
-document.getElementById('date').innerHTML = "&copy; Ahmed Mikky " + year

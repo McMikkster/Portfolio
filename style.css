@@ -17,14 +17,19 @@ html, body{ overflow-x: hidden; max-width: 100%}
 /* navbar */
 .navbar{background-color: rgb(58, 58, 58);}
 a:hover { color: #c72828 !important; }
-.nav-item { font-size: large !important; }
-.imageAboutPage{width: 100%;}
-
-
-/* hero section */
-/* .hero{
-    margin-bottom : -100px;
-} */
+.navbar-brand {
+  font-size: 2rem !important; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: .1rem;
+}
+.nav-item { 
+  font-size: 1.5rem; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: .1rem;
+}
+/* font-family: 'Courier New', Courier, monospace */
+h1, h2{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;}
+h5 {font-family: 'Courier New', Courier, monospace !important}
 
 .hero-body {
     height: 100vh;
@@ -81,7 +86,7 @@ a:hover { color: #c72828 !important; }
     overflow: hidden;
   }
   .terminal pre:nth-child(1) p {
-    width: 33.5em;
+    /* width: 31em; */
     animation: typing  0.5s steps(30, end);
   }
   .terminal pre:nth-child(2) {
@@ -92,6 +97,12 @@ a:hover { color: #c72828 !important; }
   }
   .terminal pre:nth-child(4) {
     animation: typing2 6s steps(50, end);
+  }
+  .terminal pre:nth-child(5) {
+    animation: typing2 7s steps(50, end);
+  }
+  .terminal pre:nth-child(6) {
+    animation: typing2 8s steps(50, end);
   }
   .terminal-span {
     display: block;
@@ -113,7 +124,7 @@ a:hover { color: #c72828 !important; }
       width: 0;
     }
     100% {
-      width: 100%;
+      width: 1200px;
     }
   }
   @keyframes blink {
@@ -127,17 +138,17 @@ a:hover { color: #c72828 !important; }
 #about{
     background-color:#f7f7f7;
 }
-.aboutMeTitle{
-    padding-bottom: 50px;
+.portrait{
+  margin-right: 50px;
 }
-/* .aboutMeTitle{ 
-  transform: rotate(-90deg);
-} */
+
 
 .row-aboutme{
     padding: 20px 0px;
     margin: 10px;
 }
+
+.aboutMe{margin-top: 20px !important;}
 
 
 /* experiences section css */
@@ -197,7 +208,7 @@ a:hover { color: #c72828 !important; }
     left: 50%;
     margin-left: -3px;
     z-index: -1;
-    /* animation: moveline 6s linear forwards; */
+    animation: moveline 3s linear forwards;
 }
 
 @keyframes moveline{
@@ -251,7 +262,7 @@ a:hover { color: #c72828 !important; }
     margin-bottom: 15px;
 }
 
-@media screen and (max-width:600px)
+@media screen and (max-width:1000px)
 {
     .timeline{
         margin: 50px auto;
@@ -265,7 +276,7 @@ a:hover { color: #c72828 !important; }
         padding-right: 25px;
     }
     .timeline-textbox{
-        font-size : 13px
+        font-size : 13px;
     }
     .timeline-textbox medium{
         margin-bottom: 10px;
@@ -275,19 +286,39 @@ a:hover { color: #c72828 !important; }
     }
 
     .left-container img, .right-container img {
-        left : 10px;
+        left : -5px;
     }
     .left-container-arrow, .right-container-arrow{
         border-right: 15px solid #fff;
         border-left : 0;
         left : -15px;
     }
+
+    .email{
+      margin-top: 20px;
+    }
+    .portraitPhoto {
+      display : none;
+    }
+    .hero {
+      background-image: url('images/hero.jpg'); /* Replace 'new-image.jpg' with the path to your new image */
+      background-size: cover; /* Adjust the background size as needed */
+      background-position: center; /* Center the background image */
+      background-color: transparent; /* Remove background color */
+      display: block; /* Show the .hero section */
+      height: 100%; /* Set a height for the container */
+      width: 100%; /* Set the width to 100% of the viewport */
+  }
+
+  .terminal-container {
+      display: none; /* Hide the terminal content within the hero section */
+  }
+
 }
 
 
 /* projects section */
 #projects{background: #f7f7f7;}
-.projects-row{padding-top: 50px;}
 
 
 /* contact me */
@@ -295,7 +326,7 @@ a:hover { color: #c72828 !important; }
 
 /* social media icons styling */
 .social-icons{
-    font-size: 36px;
+    font-size: 45px;
     cursor: pointer;
 }
 .fa-linkedin:hover, .fa-github:hover {
@@ -308,20 +339,15 @@ a:hover { color: #c72828 !important; }
 
 /* footer styling */
 #footer{
-    background-color: rgb(58, 58, 58);;
-    /* background-color: #2e364a; */
+    background-color: rgb(58, 58, 58);
     text-align: center;
 }
 
-#experiences, #projects, #contact {
-    margin-top: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-}
-#about{
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+/* spacing on all sections */
+#about, #experiences, #projects, #contact {
+  margin-top: 4rem;
+  padding-top: 4rem;
 }
 #contact {
-    padding-bottom: 4rem;
+  padding-bottom: 4rem;
 }

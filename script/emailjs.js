@@ -4,13 +4,8 @@ function sendMail() {
       email: document.getElementById("email").value,
       message: document.getElementById("message").value,
     };
-    
-    // if(!name | !email | !message)
-    // {
-    //   alert("Please complete the entire form.")
-    // }
-    // else{
-     const serviceID = "service_yma8m5h";
+
+    const serviceID = "service_yma8m5h";
     const templateID = "contact_form";
     
       emailjs.send(serviceID, templateID, params)
@@ -23,9 +18,5 @@ function sendMail() {
   
       })
       .catch(err=>console.log(err));     
-    // }
-
-
-  
   }
   

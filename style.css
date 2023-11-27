@@ -15,14 +15,16 @@ html, body{
   margin : 0;
   padding: 0;
 }
+
 body{
-    background-color: #2e364a !important;
+  background-color: rgb(58, 58, 58) !important;
 }
-@media (max-width: 767px) {
-  .navbar {
-      background-color: rgb(58, 58, 58) !important;
-  }
+#hero, #experiences, #contact{
+  background-color: #2e364a !important;
+  position : relative;
+  z-index: -2;
 }
+
 
 
 
@@ -164,6 +166,7 @@ h5 {font-family: 'Courier New', Courier, monospace !important}
 
 /* experiences section css */
 .experiencesTitle{
+  padding-top: 20px;
   color: #f7f7f7;
 }
 
@@ -305,7 +308,7 @@ h5 {font-family: 'Courier New', Courier, monospace !important}
     .portraitPhoto {
       display : none;
     }
-    .hero {
+    #hero {
       background-image: url('images/hero.jpg'); 
       background-size: cover; 
       background-position: center;
@@ -370,7 +373,7 @@ h5 {font-family: 'Courier New', Courier, monospace !important}
 
 /* spacing on all sections */
 #about, #experiences, #projects, #contact {
-  margin-top: 4rem;
+  padding-top: 4rem;
   padding-top: 4rem;
 }
 #contact {

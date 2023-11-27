@@ -28,7 +28,7 @@ body{
 
 /* navbar */
 .navbar{background-color: rgb(58, 58, 58);}
-a:hover { color: #c72828 !important; }
+a:hover{ color: #c72828 !important;}
 .navbar-brand {
   font-size: 2rem !important; 
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

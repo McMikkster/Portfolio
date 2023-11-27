@@ -22,10 +22,8 @@ body{
 #hero, #experiences, #contact{
   background-color: #2e364a !important;
   position : relative;
-  z-index: -2;
+  z-index: 0;
 }
-
-
 
 
 /* navbar */

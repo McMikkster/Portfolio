@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -207,3 +208,384 @@ svg{
         
      
     }
+=======
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+html, body{ 
+  overflow-x: hidden;
+  width: 100%;
+  margin : 0;
+  padding: 0;
+}
+
+body{
+  background-color: rgb(58, 58, 58) !important;
+}
+#hero, #experiences, #contact{
+  background-color: #2e364a !important;
+  position : relative;
+  z-index: 0;
+}
+
+
+/* navbar */
+.navbar{background-color: rgb(58, 58, 58);}
+a:hover{ color: #c72828 !important;}
+.navbar-brand {
+  font-size: 2rem !important; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: .1rem;
+}
+.nav-item { 
+  font-size: 1.5rem; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: .1rem;
+}
+h1, h2{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;}
+h5 {font-family: 'Courier New', Courier, monospace !important}
+
+.hero-body {
+    height: 100vh;
+    margin-bottom: -100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .terminal-container {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    background: black;
+  }
+  .terminal {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 6px;
+    padding-top: 45px;
+    overflow: hidden;
+    background-color: rgb(15, 15, 16);
+    transform: translateY(-3px);
+    padding-bottom: 50px;
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+  }
+  .terminal::before {
+    content: "\2022 \2022 \2022";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: rgb(58, 58, 58);
+    color: #c2c3c4;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 0;
+    padding: 14px 0;
+    text-indent: 10px;
+  }
+  .terminal pre {
+    display: flex;
+    flex-direction: row;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+    font-size: large;
+    color: lime;
+    padding: 0 1rem 1rem;
+    margin-bottom: -5px;
+  }
+  .terminal pre p {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .terminal pre:nth-child(1) p {
+    /* width: 31em; */
+    animation: typing  0.5s steps(30, end);
+  }
+  .terminal pre:nth-child(2) {
+    animation: typing2 4s steps(50, end);
+  }
+  .terminal pre:nth-child(3) {
+    animation: typing2 5s steps(50, end);
+  }
+  .terminal pre:nth-child(4) {
+    animation: typing2 6s steps(50, end);
+  }
+  .terminal pre:nth-child(5) {
+    animation: typing2 7s steps(50, end);
+  }
+  .terminal pre:nth-child(6) {
+    animation: typing2 8s steps(50, end);
+  }
+  .terminal-span {
+    display: block;
+    padding: 1px 0px;
+    background-color: lime;
+    height: 20px;
+    animation: blink 0.8s infinite;
+  }
+  @keyframes typing  {
+    from {
+      width: 0;
+    }
+  }
+  @keyframes typing2 {
+    0% {
+      width: 0;
+    }
+    40% {
+      width: 0;
+    }
+    100% {
+      width: 1200px;
+    }
+  }
+  @keyframes blink {
+    to {
+      opacity: 0.3;
+    }
+  }
+
+
+/* about section */
+#about{
+    background-color:#f7f7f7;
+}
+.portrait{
+  margin-right: 50px;
+}
+
+
+.row-aboutme{
+    padding: 20px 0px;
+    margin: 10px;
+}
+
+.aboutMe{margin-top: 20px !important;}
+
+
+/* experiences section css */
+.experiencesTitle{
+  padding-top: 20px;
+  color: #f7f7f7;
+}
+
+.timeline{
+    position : relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.timeline-container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation : movedown 1s linear forwards;
+    opacity: 0;
+}
+@keyframes movedown{
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.container:nth-child(1){
+    animation-delay: 0s;
+}
+.container:nth-child(2){
+    animation-delay: 1s;
+}
+.container:nth-child(3){
+    animation-delay: 2s;
+}
+
+.timeline-container img{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #f7f7f7;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 3s linear forwards;
+}
+
+@keyframes moveline{
+    0% {height : 0}
+    100% {height : 100%;}
+}
+.right-container img{
+    left: -20px;
+}
+
+.left-container{
+    left:0;
+}
+.right-container{
+    left:50%
+}
+
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #f7f7f7;
+    right : -15px;
+}
+
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #f7f7f7;
+    left : -15px;
+}
+.timeline-textbox{
+    padding: 20px 30px;
+    background: #f7f7f7;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.timeline-textbox h2{font-weight: 600;}
+.timeline-textbox medium{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width:1000px)
+{
+  .timeline::after{display: none;}
+
+  .timeline-container {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+    .timeline-textbox{
+        font-size : 13px;
+    }
+    .timeline-textbox medium{
+        margin-bottom: 10px;
+    }
+    .right-container{
+        left:0;
+    }
+
+    .left-container img, .right-container img {
+        display: none;
+    }
+    .left-container-arrow, .right-container-arrow{
+        display: none;
+    }
+
+    .email{
+      margin-top: 20px;
+    }
+    .portraitPhoto {
+      display : none;
+    }
+    #hero {
+      background-image: url('images/hero.jpg'); 
+      background-size: cover; 
+      background-position: center;
+      background-color: transparent;
+      display: block;
+      height: 100%; 
+      width: 100%; 
+  }
+
+  .terminal-container {
+      display: none; 
+  }
+
+}
+
+
+/* projects section */
+#projects{background: #f7f7f7;}
+
+
+/* contact me */
+#contact h1 {color: #f7f7f7;}
+
+/* social media icons styling */
+.social-icons {
+  font-size: 45px;
+  cursor: pointer;
+}
+
+.fa-linkedin:hover, .fa-github:hover {
+  color: #c72828;
+}
+
+.fab {
+  color: #000000;
+}
+
+/* footer styling */
+#footer {
+  background-color: rgb(58, 58, 58);
+  text-align: center;
+  padding-top: 10px; /* Add padding for better spacing */
+}
+
+/* Flex container for vertical centering */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center vertically */
+}
+
+/* Additional styling for the left side text */
+.footer-text {
+  color: #f7f7f7;
+  font-size: 20px;
+  text-align: left;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: .1rem;
+  margin-bottom: -15px;
+}
+
+
+/* spacing on all sections */
+#about, #experiences, #projects, #contact {
+  padding-top: 4rem;
+  padding-top: 4rem;
+}
+#contact {
+  padding-bottom: 4rem;
+}
+>>>>>>> development

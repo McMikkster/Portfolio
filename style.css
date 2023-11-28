@@ -44,7 +44,7 @@ h5 {font-family: 'Courier New', Courier, monospace !important}
 
 .hero-body {
     height: 100vh;
-    margin-bottom: -100px;
+    /* margin-bottom: -100px; */
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -370,8 +370,9 @@ h5 {font-family: 'Courier New', Courier, monospace !important}
 
 
 /* spacing on all sections */
+
 #about, #experiences, #projects, #contact {
-  padding-top: 4rem;
+  /* margin-top: 4rem; */
   padding-top: 4rem;
 }
 #contact {
